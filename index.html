@@ -4,54 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo-mark.svg">
   
-  <title>Frontend Mentor | Conference ticket generator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Coding Conf</title>
+  <!--Fonts Start-->
+  <!--Fonts End-->
+  <!--Styles and Javascript Start-->
+  <link rel="stylesheet" href="/dist/style.css">
+  <script src="/dist/script.js"></script>
+  <!--Styles and Javascript End-->
 </head>
 <body>
-
-  <!-- Form starts -->
-
-  Your Journey to Coding Conf 2025 Starts Here!
-
-  Secure your spot at next year's biggest coding conference.
-
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
-
-  Full Name
-
-  Email Address
-  example@email.com
-
-  GitHub Username
-  @yourusername
-
-  Generate My Ticket
-
-  <!-- Form ends -->
-
-  <!-- Generated tickets starts -->
-
-  Congrats, <!-- Full Name -->! Your ticket is ready.
-
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
-
-  <!-- Generated tickets ends -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="wrapper">
+    <picture class="background-image">
+      <source srcset="assets/background/background-desktop.png" media=(min-width:700px)>
+      <source srcset="assets/background/background-tablet.png" media=(min-width:400px)>
+      <img src="assets/background/background-mobile.png">
+    </picture>
+    <picture class="background-image--bottom-left">
+      <source srcset="assets/background/pattern-squiggly-line-bottom-desktop.svg" media="(min-width:700px)">
+      <img src="assets/background/pattern-squiggly-line-bottom-mobile-tablet.svg">
+    </picture>
+    <img src="assets/background/pattern-squiggly-line-top.svg">
+    <img src="assets/background/pattern-circle.svg">
+    <img src="assets/background/pattern-circle.svg">
+    
+    <section id="Form"  class="wrapper__form" >
+      <img src="assets/images/logo-full.svg" alt="Coding Conf">
+      <h1 class="wrapper__title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p class="wrapper__spot">Secure your spot at next year's biggest coding conference.</p>
+      <form id="ticket-form">
+        <div class="wrapper__avatar" id="avatar">
+          <label for="avatar" class="wrapper__avatar-upload" id="avatar-upload">Upload Avatar
+          <div class="upload-box">
+            <input type="file" class="file-input" id="avatar" accept=".JPG,.PNG" required>
+            <img src="assets/images/icon-upload.svg" class="upload-icon">
+            <div class="upload-text" id="upload-text">Drag and drop or click to upload</div>
+            <div class="file-actions" id="file-actions">
+              <button id="remove-image" type="button">Remove Image</button>
+              <button id="change-image" type="button">Change Image</button>
+            </div>
+          </div>
+          <p class="avatar-note">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+            Upload your photo (JPG or PNG, max size: 500KB).
+          </p>
+          </label>
+        </div>
+        <fieldset class="wrapper__form" id="form">
+          <label for="full-name" class="name" id="name">
+            Full Name
+            <input type="text" class="wrapper__name" id="full-name" required>
+            <p class="text-hint" id="name-hint">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+              Please enter your Full Name!
+            </p>
+          </label>
+          <label for="email" class="email" id="email-address">
+            Email Address 
+            <input type="email" class="wrapper__email" id="email" required placeholder="example@email.com">
+            <p class="text-hint" id="email-hint">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+              Please enter a valid email addres!
+            </p>
+          </label>
+          <label for="github" class="git-hub" id="git-hub">
+            GitHub Username
+            <input type="text" class="wrapper__github" id="github" placeholder="@yourusername" required>
+            <p class="github-hint" id="github-hint">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+              Please enter a valid GitHub Username!
+            </p>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit" class="submit" value="Generate My Ticket">
+      </form>
+      
+    </section>
+    
+    
+    <section id="Ticket"  class="wrapper__ticket" style="display: none;">
+      <h1 class="wrapper__title" id="title">Congrats,<span class="ticket-name" id="ticket-name"></span>! Your ticket is ready.</h1>
+      <p class="wrapper__text" id="text">We've emailed your ticket to <span class="ticket-email" id="ticket-email"></span> and will send updates in the run up to the event.</p>
+      <div class="wrapper__real-ticket">
+        Coding Conf
+        Jan 31, 2025 / Austin, TX
+      </div>
+    </section>
+  </main>
 </body>
 </html>
