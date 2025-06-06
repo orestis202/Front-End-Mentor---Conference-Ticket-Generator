@@ -1,0 +1,13 @@
+@use 'util' as *;
+
+:root{
+    /*Font Size*/
+    --size:rem(20);
+    /*Font Family*/
+    --inconsolata: 'Inconsolata', serif;
+    /*Font Weights*/
+    --weight-400:400;
+    --weight-500:500;
+    --weight-700:700;
+    --weight-800:800;
+}
