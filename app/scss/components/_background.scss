@@ -1,0 +1,55 @@
+@use 'util' as *;
+/*
+This file is only for the background. 
+*/
+body{
+   /*Background-image for the mobile version*/
+   background-image:
+   url(/assets/background/pattern-lines.svg),
+   url(/assets/background/pattern-squiggly-line-bottom-mobile-tablet.svg),
+   url(/assets/background/pattern-squiggly-line-top.svg),
+   url(/assets/background/pattern-circle.svg),
+   url(/assets/background/pattern-circle.svg),
+   url(/assets/background/background-mobile.png);
+   background-repeat: no-repeat;
+   background-position: 
+   center,
+   bottom left,
+   top 5% right,
+   top -4% left -5%,
+   bottom 40% right -15%,
+   center;
+   background-size: cover, 70%, 20%, 25%, 25%, cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   /*Background-image for the tablet version*/
+   @include breakpoint(medium) {
+         background-image: 
+         url(/assets/background/pattern-lines.svg),
+         url(/assets/background/pattern-squiggly-line-bottom-mobile-tablet.svg),
+         url(/assets/background/pattern-squiggly-line-top.svg),
+         url(/assets/background/pattern-circle.svg),
+         url(/assets/background/pattern-circle.svg),
+         url(/assets/background/background-tablet.png);
+     }
+     /*Background-image for the desktop version*/
+     @include breakpoint(large){
+         background-image: 
+         url(/assets/background/pattern-lines.svg),
+         url(/assets/background/pattern-squiggly-line-bottom-desktop.svg),
+         url(/assets/background/pattern-squiggly-line-top.svg),
+         url(/assets/background/pattern-circle.svg),
+         url(/assets/background/pattern-circle.svg),
+         url(/assets/background/background-desktop.png);
+         background-position: center,
+         bottom  left,
+         top 5% right,
+         top -7rm left 3%,
+         bottom 40% right 20%,
+         center;
+         background-size: cover, 45%, 20%, 15%, 15%, cover;
+     }
+}
