@@ -20,11 +20,8 @@ body{
    bottom 40% right -15%,
    center;
    background-size: cover, 70%, 20%, 25%, 25%, cover;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
    text-align: center;
+   padding: 2rem 1rem;
    /*Background-image for the tablet version*/
    @include breakpoint(medium) {
          background-image: 

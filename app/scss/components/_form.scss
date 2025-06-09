@@ -1,0 +1,23 @@
+@use 'util' as *;
+header{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    &__form{
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+    }
+    &__title{
+        line-height: 1.1;
+    }
+    &__spot{
+        color: var(--hint-text);
+    }
+    
+}

@@ -1,0 +1,54 @@
+@use 'util' as *;
+.wrapper__avatar{
+    text-align: start;
+}
+
+.upload{
+    background-color: var(--form-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: rem(2) dashed var(--form-border);
+    border-radius: 1rem;
+    gap: 1rem;
+    &__icon{
+        background-color: var(--upload-icon);
+        border: rem(1) solid var(--form-border);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        width: 100%;
+        height: 100%;
+        max-width: rem(50);
+        max-height: rem(50);
+    }
+    &__text{
+        font-size: rem(18);
+        color: var(--hint-text);
+    }
+
+    &__input{
+        display: none;
+    }
+    &__actions{
+        display: none;
+        
+    }
+    &__note{
+        display:flex;
+        align-items: center;
+        gap: rem(10);
+        font-size: rem(13);
+        color: var(--hint-text);        
+
+    }
+
+}
+.button{
+    background-color: var(--upload-icon);
+    color: var(--hint-text);
+    border: none;
+    border-radius: 0.3rem;
+    text-decoration: underline;
+}

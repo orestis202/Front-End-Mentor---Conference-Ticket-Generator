@@ -2,7 +2,9 @@
     /*Neutral*/
     --text-white:hsl(0, 0%, 100%);
     --hint-text: hsl(252, 6%, 83%);
-    --form-background-500:hsl(245, 15%, 58%);
+    --form-border:hsl(245, 15%, 58%);
+    --form-background: hsla(245, 15%, 58%, 0.2);
+    --upload-icon:hsla(245, 15%, 58%, 0.3);
     --border:hsl(245, 19%, 35%);
     --button-text:hsl(248, 70%, 10%);
     /*Button*/

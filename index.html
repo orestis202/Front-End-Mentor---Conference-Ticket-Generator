@@ -18,27 +18,29 @@
   <!--Styles and Javascript End-->
 </head>
 <body>
+  <header>
+          <img src="assets/images/logo-full.svg" alt="Coding Conf">
+  </header>
   <main class="wrapper">
     <section id="Form"  class="wrapper__form" >
-      <img src="assets/images/logo-full.svg" alt="Coding Conf">
       <h1 class="wrapper__title">Your Journey to Coding Conf 2025 Starts Here!</h1>
       <p class="wrapper__spot">Secure your spot at next year's biggest coding conference.</p>
       <form id="ticket-form">
-        <div class="wrapper__avatar" id="avatar">
-          <label for="avatar" class="wrapper__avatar-upload" id="avatar-upload">Upload Avatar
-          <div class="upload-box">
-            <input type="file" class="file-input" id="avatar" accept=".JPG,.PNG" required>
-            <img src="assets/images/icon-upload.svg" class="upload-icon">
-            <div class="upload-text" id="upload-text">Drag and drop or click to upload</div>
-            <div class="file-actions" id="file-actions">
-              <button id="remove-image" type="button">Remove Image</button>
-              <button id="change-image" type="button">Change Image</button>
+        <div class="wrapper__avatar" id="wrapper__avatar">
+          <label for="avatar" class="wrapper__label" id="avatar-upload">Upload Avatar
+            <div class="upload">
+              <input type="file" class="upload__input" id="avatar" acceptJ="image/jpeg, image/png"  required>
+              <img src="assets/images/icon-upload.svg" class="upload__icon">
+              <div class="upload__text" id="upload-text">Drag and drop or click to upload</div>
+              <div class="upload__actions" id="file-actions">
+                <button id="remove-image" class="button" type="button">Remove Image</button>
+                <button id="change-image" class="button" type="button">Change Image</button>
+              </div>
             </div>
-          </div>
-          <p class="avatar-note">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
-            Upload your photo (JPG or PNG, max size: 500KB).
-          </p>
+            <p class="upload__note">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+              Upload your photo (JPG or PNG, max size: 500KB).
+            </p>
           </label>
         </div>
         <fieldset class="wrapper__form" id="form">
