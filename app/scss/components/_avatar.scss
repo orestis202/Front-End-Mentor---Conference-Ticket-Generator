@@ -10,12 +10,12 @@
     align-items: center;
     padding: 1rem;
     margin: 0.5rem 0;
-    border: rem(2) dashed var(--form-border);
+    border: rem(2) dashed var(--border);
     border-radius: 1rem;
     gap: 1rem;
     &__icon{
         background-color: var(--upload-icon);
-        border: rem(1) solid var(--form-border);
+        border: rem(1) solid var(--border);
         border-radius: 0.5rem;
         padding: 0.5rem;
         width: 100%;
@@ -35,14 +35,7 @@
         display: none;
         
     }
-    &__note{
-        display:flex;
-        align-items: center;
-        gap: rem(10);
-        font-size: rem(13);
-        color: var(--hint-text);        
-
-    }
+    
 
 }
 .button{

@@ -22,12 +22,12 @@
           <img src="assets/images/logo-full.svg" alt="Coding Conf">
   </header>
   <main class="wrapper">
-    <section id="Form"  class="wrapper__form" >
-      <h1 class="wrapper__title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <section id="Form"  class="wrapper__section" >
+      <h1 class="wrapper__title">Your Journey to Coding Conf <span class="break">2025 Starts Here!</span></h1>
       <p class="wrapper__spot">Secure your spot at next year's biggest coding conference.</p>
-      <form id="ticket-form">
+      <form id="ticket-form" class="wrapper__form">
         <div class="wrapper__avatar" id="wrapper__avatar">
-          <label for="avatar" class="wrapper__label" id="avatar-upload">Upload Avatar
+          <label for="avatar" class="avatar-label" id="avatar-upload">Upload Avatar
             <div class="upload">
               <input type="file" class="upload__input" id="avatar" acceptJ="image/jpeg, image/png"  required>
               <img src="assets/images/icon-upload.svg" class="upload__icon">
@@ -37,33 +37,33 @@
                 <button id="change-image" class="button" type="button">Change Image</button>
               </div>
             </div>
-            <p class="upload__note">
+            <p class="text-hint" id="upload-hint">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
               Upload your photo (JPG or PNG, max size: 500KB).
             </p>
           </label>
         </div>
-        <fieldset class="wrapper__form" id="form">
-          <label for="full-name" class="name" id="name">
+        <fieldset class="wrapper__info" id="info">
+          <label for="full-name" class="label" id="name">
             Full Name
-            <input type="text" class="wrapper__name" id="full-name" required>
+            <input type="text" class="wrapper__input" id="full-name" required>
             <p class="text-hint" id="name-hint">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
               Please enter your Full Name!
             </p>
           </label>
-          <label for="email" class="email" id="email-address">
+          <label for="email" class="label" id="email-address">
             Email Address 
-            <input type="email" class="wrapper__email" id="email" required placeholder="example@email.com">
+            <input type="email" class="wrapper__input" id="email" required placeholder="example@email.com">
             <p class="text-hint" id="email-hint">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
               Please enter a valid email addres!
             </p>
           </label>
-          <label for="github" class="git-hub" id="git-hub">
+          <label for="github" class="label" id="git-hub">
             GitHub Username
-            <input type="text" class="wrapper__github" id="github" placeholder="@yourusername" required>
-            <p class="github-hint" id="github-hint">
+            <input type="text" class="wrapper__input" id="github" placeholder="@yourusername" required>
+            <p class="text-hint" id="github-hint">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
               Please enter a valid GitHub Username!
             </p>
