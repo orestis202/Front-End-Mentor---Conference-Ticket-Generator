@@ -17,72 +17,86 @@
   <script src="/dist/script.js"></script>
   <!--Styles and Javascript End-->
 </head>
-<body>
-  <header>
-          <img src="assets/images/logo-full.svg" alt="Coding Conf">
-  </header>
-  <main class="wrapper">
-    <section id="Form"  class="wrapper__section" >
-      <h1 class="wrapper__title">Your Journey to Coding Conf <span class="break">2025 Starts Here!</span></h1>
-      <p class="wrapper__spot">Secure your spot at next year's biggest coding conference.</p>
-      <form id="ticket-form" class="wrapper__form">
-        <div class="wrapper__avatar" id="wrapper__avatar">
-          <label for="avatar" class="avatar-label" id="avatar-upload">Upload Avatar
-            <div class="upload">
-              <input type="file" class="upload__input" id="avatar" acceptJ="image/jpeg, image/png"  required>
-              <img src="assets/images/icon-upload.svg" class="upload__icon">
-              <div class="upload__text" id="upload-text">Drag and drop or click to upload</div>
-              <div class="upload__actions" id="file-actions">
-                <button id="remove-image" class="button" type="button">Remove Image</button>
-                <button id="change-image" class="button" type="button">Change Image</button>
+  <body>
+    <header>
+      <img src="assets/images/logo-full.svg" alt="Coding Conf">
+    </header>
+    <main class="wrapper" >
+      <section id="Form"  class="wrapper__section" >
+        <h1 class="wrapper__title">Your Journey to Coding Conf <span class="break">2025 Starts Here!</span></h1>
+        <p class="wrapper__spot">Secure your spot at next year's biggest coding conference.</p>
+        <form id="ticket-form" class="wrapper__form">
+          <div class="wrapper__avatar" id="wrapper__avatar">
+            <label for="avatar" class="avatar-label" id="avatar-upload">Upload Avatar
+              <div class="upload">
+                <input type="file" class="upload__input" id="avatar-input" acceptJ="image/jpeg, image/png"  required>
+                <img src="assets/images/icon-upload.svg" class="upload__icon">
+                <div class="upload__text" id="upload-text">Drag and drop or click to upload</div>
+                <div class="upload__actions" id="file-actions">
+                  <button id="remove-image" class="button" type="button">Remove Image</button>
+                  <button id="change-image" class="button" type="button">Change Image</button>
+                </div>
               </div>
-            </div>
-            <p class="text-hint" id="upload-hint">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
-              Upload your photo (JPG or PNG, max size: 500KB).
-            </p>
-          </label>
-        </div>
-        <fieldset class="wrapper__info" id="info">
-          <label for="full-name" class="label" id="name">
-            Full Name
-            <input type="text" class="wrapper__input" id="full-name" required>
-            <p class="text-hint" id="name-hint">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
-              Please enter your Full Name!
-            </p>
-          </label>
-          <label for="email" class="label" id="email-address">
-            Email Address 
-            <input type="email" class="wrapper__input" id="email" required placeholder="example@email.com">
-            <p class="text-hint" id="email-hint">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
-              Please enter a valid email addres!
-            </p>
-          </label>
-          <label for="github" class="label" id="git-hub">
-            GitHub Username
-            <input type="text" class="wrapper__input" id="github" placeholder="@yourusername" required>
-            <p class="text-hint" id="github-hint">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
-              Please enter a valid GitHub Username!
-            </p>
-          </label>
-        </fieldset>
-        <input type="submit" id="submit" class="submit" value="Generate My Ticket">
-      </form>
+              <p class="text-hint" id="upload-hint">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+                Upload your photo (JPG or PNG, max size: 500KB).
+              </p>
+            </label>
+          </div>
+          <fieldset class="wrapper__info" id="info">
+            <label for="full-name-input" class="label" id="name">
+              Full Name
+              <input type="text" class="wrapper__input" id="full-name-input" required>
+              <p class="text-hint" id="name-hint">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+                Please enter your Full Name!
+              </p>
+            </label>
+            <label for="email" class="label" id="email-address">
+              Email Address 
+              <input type="email" class="wrapper__input" id="email" required placeholder="example@email.com">
+              <p class="text-hint" id="email-hint">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+                Please enter a valid email addres!
+              </p>
+            </label>
+            <label for="github" class="label" id="git-hub-label">
+              GitHub Username
+              <input type="text" class="wrapper__input" id="github" placeholder="@yourusername" required>
+              <p class="text-hint" id="github-hint">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert-icon lucide-circle-alert"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+                Please enter a valid GitHub Username!
+              </p>
+            </label>
+          </fieldset>
+          <button id="submit" class="submit" type="button">Generate My Ticket</button>
+        </form>
+        
+      </section>
       
-    </section>
-    
-    
-    <section id="Ticket"  class="wrapper__ticket" style="display: none;">
-      <h1 class="wrapper__title" id="title">Congrats,<span class="ticket-name" id="ticket-name"></span>! Your ticket is ready.</h1>
-      <p class="wrapper__text" id="text">We've emailed your ticket to <span class="ticket-email" id="ticket-email"></span> and will send updates in the run up to the event.</p>
-      <div class="wrapper__real-ticket">
-        Coding Conf
-        Jan 31, 2025 / Austin, TX
-      </div>
-    </section>
-  </main>
-</body>
+      
+      
+      
+      <section class="ticket" style="display: none;">
+        <h2 class="ticket__title">
+          Congrats, <span class="ticket__nameValue" id="nameValue">Jonathan Kristof</span>! Your ticket
+          is ready.
+        </h2>
+        <p class="ticket__info">
+          We've emailed your ticket to
+          <span class="ticket__emailValue" id="emailValue">Jonathan@email.com</span> and will send
+          updates in the run up to the event
+        </p>
+        <div class="ticket__pattern">
+          <div class="ticket__icon"></div>
+          <p class="ticket__logo">Coding Conf</p>
+          <p class="ticket__date">Jan 31, 2025 / Austin, TX</p>
+          <img src="assets/images/image-avatar.jpg" alt="Avatar" class="ticket__avatar">
+          <p class="ticket__name" id="ticketName">Jonathan Kristof</p>
+          <p class="ticket__github" id="ticketGithub"><img src="assets/images/icon-github.svg" alt="Git Hub Icon"> <span id="githubValue">@jonathankristof</span></p>
+          <p class="ticket__code"><span class="ticket__number">#01609</span></p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

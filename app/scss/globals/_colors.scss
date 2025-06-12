@@ -1,8 +1,8 @@
 :root{
     /*Neutral*/
     --text-white:hsl(0, 0%, 100%);
-    --hint-text: hsl(252, 6%, 83%);
-    --form-border:hsl(245, 15%, 58%);
+    --form-border: hsl(252, 6%, 83%);
+    --hint-text:hsl(245, 15%, 58%);
     --form-background: hsla(245, 15%, 58%, 0.2);
     --upload-icon:hsla(245, 15%, 58%, 0.3);
     --border:hsl(245, 19%, 35%);
@@ -11,6 +11,9 @@
     --button:hsl(7, 88%, 67%);
     --button-hover:hsl(7, 71%, 60%);
     /*Gradient*/
-    --gradient-start:hsl(7, 86%, 67%);
-    --gradient-end:hsl(0, 0%, 100%);
+    --gradient-text: linear-gradient(
+      to right,
+      hsl(7, 86%, 67%),
+      hsl(0, 0%, 100%)
+    );
 }

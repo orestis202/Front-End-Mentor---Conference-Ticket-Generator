@@ -1,8 +1,5 @@
 @use 'util' as *;
-header{
-    display: flex;
-    justify-content: center;
-}
+
 .wrapper{
     display: flex;
     align-items: center;
@@ -24,11 +21,11 @@ header{
     }
     &__title{
         line-height: 1.1;
-        @include breakpoint(large){
+        @include breakpoint(medium) {
             font-size: rem(55);
             width: 100%;
             .break{
-                display: block;
+                display: none;
             }
         }
     }
@@ -84,4 +81,8 @@ fieldset .text-hint {
     color: var(--button-text);
     font-weight: var(--weight-800);
     margin-top: 1rem ;
+}
+.submit:is(:hover, :focus){
+    background-color: var(--button-hover);
+    cursor: pointer;
 }
