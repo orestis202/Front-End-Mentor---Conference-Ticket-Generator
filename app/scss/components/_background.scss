@@ -22,6 +22,10 @@ body{
    background-size: cover, 70%, 20%, 25%, 25%, cover;
    text-align: center;
    padding: 2rem 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    
    /*Background-image for the tablet version*/
    @include breakpoint(medium) {

@@ -13,6 +13,7 @@
     border: rem(2) dashed var(--border);
     border-radius: 1rem;
     gap: 1rem;
+    
     &__icon{
         background-color: var(--upload-icon);
         border: rem(1) solid var(--border);
@@ -20,16 +21,12 @@
         padding: 0.5rem;
         width: 100%;
         height: 100%;
-        max-width: rem(50);
-        max-height: rem(50);
+        max-width: rem(80);
+        max-height: rem(80);
     }
     &__text{
         font-size: rem(18);
         color: var(--hint-text);
-    }
-
-    &__input{
-        display: none;
     }
     &__actions{
         display: none;
@@ -44,4 +41,9 @@
     border: none;
     border-radius: 0.3rem;
     text-decoration: underline;
+}
+.button:is(:hover, :focus){
+    cursor: pointer;
+    outline: rem(2) solid var(--border);
+    
 }
