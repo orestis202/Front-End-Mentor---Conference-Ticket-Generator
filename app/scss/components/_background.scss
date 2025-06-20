@@ -5,12 +5,12 @@ This file is only for the background.
 body{
    /*Background-image for the mobile version*/
    background-image:
-   url(/assets/background/pattern-lines.svg),
-   url(/assets/background/pattern-squiggly-line-bottom-mobile-tablet.svg),
-   url(/assets/background/pattern-squiggly-line-top.svg),
-   url(/assets/background/pattern-circle.svg),
-   url(/assets/background/pattern-circle.svg),
-   url(/assets/background/background-mobile.png);
+   url(assets/background/pattern-lines.svg),
+   url(assets/background/pattern-squiggly-line-bottom-mobile-tablet.svg),
+   url(assets/background/pattern-squiggly-line-top.svg),
+   url(assets/background/pattern-circle.svg),
+   url(assets/background/pattern-circle.svg),
+   url(assets/background/background-mobile.png);
    background-repeat: no-repeat;
    background-position: 
    center,
@@ -30,22 +30,22 @@ body{
    /*Background-image for the tablet version*/
    @include breakpoint(medium) {
          background-image: 
-         url(/assets/background/pattern-lines.svg),
-         url(/assets/background/pattern-squiggly-line-bottom-mobile-tablet.svg),
-         url(/assets/background/pattern-squiggly-line-top.svg),
-         url(/assets/background/pattern-circle.svg),
-         url(/assets/background/pattern-circle.svg),
-         url(/assets/background/background-tablet.png);
+         url(assets/background/pattern-lines.svg),
+         url(assets/background/pattern-squiggly-line-bottom-mobile-tablet.svg),
+         url(assets/background/pattern-squiggly-line-top.svg),
+         url(assets/background/pattern-circle.svg),
+         url(assets/background/pattern-circle.svg),
+         url(assets/background/background-tablet.png);
      }
      /*Background-image for the desktop version*/
      @include breakpoint(large){
          background-image: 
-         url(/assets/background/pattern-lines.svg),
-         url(/assets/background/pattern-squiggly-line-bottom-desktop.svg),
-         url(/assets/background/pattern-squiggly-line-top.svg),
-         url(/assets/background/pattern-circle.svg),
-         url(/assets/background/pattern-circle.svg),
-         url(/assets/background/background-desktop.png);
+         url(assets/background/pattern-lines.svg),
+         url(assets/background/pattern-squiggly-line-bottom-desktop.svg),
+         url(assets/background/pattern-squiggly-line-top.svg),
+         url(assets/background/pattern-circle.svg),
+         url(assets/background/pattern-circle.svg),
+         url(assets/background/background-desktop.png);
          background-position: center,
          bottom  left,
          top 5% right,
